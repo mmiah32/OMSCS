@@ -39,8 +39,11 @@ class RTLearner(object):
         """
         Constructor method
         """
+        #store leaf size into self for use in next function
         self.leaf_size = leaf_size
+        #store verbose into self for use in next function
         self.verbose = verbose
+        #store tree into self for use in next function
         self.tree = None
 
     def author(self):
@@ -49,6 +52,16 @@ class RTLearner(object):
         :rtype: str
         """
         return "mmiah32"  # replace tb34 with your Georgia Tech username
+
+    def gtid(self):
+        """
+        :return: The GT ID of the student
+        :rtype: int
+        """
+        return 904188350
+
+    def study_group(self):
+        return 'mmiah32', 'discord channel'
 
     def add_evidence(self, data_x, data_y):
         """
